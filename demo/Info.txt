@@ -1,5 +1,3 @@
-Hello,
-This is a file.
-This is the Info file for Demo folder
-This is the Info file for Demo folder
+Hello, Welcome to demo session 
+Hello
 This is the Info file for Demo folder

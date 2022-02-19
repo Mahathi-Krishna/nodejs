@@ -11,6 +11,19 @@ function returnData(err,data){
     }
 };
 
+// Write file: Info.txt
+fs.writeFile("./Info.txt",
+    "Hello, Welcome to demo session \n",
+    (err) => {
+        if(err){
+            console.log(err);
+        }
+        else{
+            console.log("Write completed");
+        }
+    }
+);
+
 // Read file: Info.txt
 fs.readFile("./Info.txt", returnData);
 
@@ -25,5 +38,8 @@ fs.appendFile("./Info.txt",
         }
     }
 );
+
+// Read file: Info.txt
+fs.readFile("./Info.txt", returnData);
 
 console.log("End of fs");
