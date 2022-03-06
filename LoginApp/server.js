@@ -15,7 +15,8 @@ let sess;
 
 app.get('/',(req,res) => {
     sess=req.session;
-    sess.email=" "
+    sess.email=" ";
+    console.log(">>>>",req.session);
     console.log(">>>>",sess.email);
     res.render('index',{error: req.query.valid?req.query.valid:'',
                         msg: req.query.msg?req.query.msg:''})
